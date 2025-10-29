@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 const svgToDataUri = require("mini-svg-data-uri");
 const {
 	default: flattenColorPalette,
@@ -67,6 +66,11 @@ const config = {
 					foreground: "hsl(var(--card-foreground))",
 				},
 				chart: {
+					"1": "hsl(var(--chart-1))",
+					"2": "hsl(var(--chart-2))",
+					"3": "hsl(var(--chart-3))",
+					"4": "hsl(var(--chart-4))",
+					"5": "hsl(var(--chart-5))",
 					"1": "hsl(var(--chart-1))",
 					"2": "hsl(var(--chart-2))",
 					"3": "hsl(var(--chart-3))",
