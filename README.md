@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+###
 
-## Getting Started
 
-First, run the development server:
+
+# Next.js 16 SaaS Boilerplate
+
+Next.js 16 starter for rapidly building SaaS apps with authentication, database, state management, theming, and production-grade DX baked in.
+
+
+
+![thumbnail](/public/next.svg)
+
+
+
+## Features
+
+
+
+- 🚀 Next.js 16 with App Router, React 19, Turbopack enabled
+- 🔐 Authentication with Clerk and global route protection middleware
+- 🗄️ Prisma ORM with PostgreSQL and Accelerate extension
+- 📦 Generated Prisma client under `lib/generated/prisma`
+- 🔄 TanStack Query provider with Devtools
+- 🎨 Tailwind CSS with extended theme, animations, and dark mode
+- 🧹 Biome for linting/formatting; Husky + lint-staged; Commitlint
+- 🧪 Strict TypeScript config and path aliases (`@/*`)
+- 🧰 Optional local Supabase setup for Postgres + Studio
+
+
+
+## Built with
+
+
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Clerk](https://clerk.com/)
+- [Prisma](https://prisma.io/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel AI Sdk](https://ai-sdk.dev/docs/introduction)
+
+
+### Tools
+
+- [Biome](https://biomejs.dev/)
+- [Husky](https://typicode.github.io/husky/)
+- [Commitlint](https://commitlint.js.org/#/)
+- [Supabase CLI](https://supabase.com/docs/guides/local-development/cli) (optional)
+
+
+
+## Feature Requests
+
+
+
+Open a GitHub issue in this repository and describe your request clearly.
+
+
+
+### Setting Up Environment Variables
+
+
+
+To run the project locally, create a `.env.local` file in the root directory and add the following variables:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Database (PostgreSQL)
+DATABASE_URL=
+
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# Optional Clerk routes if you customize auth pages
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+# Optional app metadata
+NEXT_PUBLIC_APP_NAME=SaaS Boilerplate
+
+# Optional: OpenAI (only if you add AI features)
+OPENAI_API_KEY=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Optional: If you use Supabase locally, run `supabase start` and point `DATABASE_URL` to the local Postgres connection.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 📜 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Built with ❤️ by [Anayat](https://anayat.xyz)
+
+
+
+###
